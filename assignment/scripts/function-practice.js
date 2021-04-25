@@ -10,8 +10,6 @@ function hello() {
 }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
-// I feel like this is already solved as it is a function that returns
-// "Hello World!" when you log to test it. Trick question?
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
 function helloName() {
@@ -41,10 +39,10 @@ console.log( 'Test - running multiplyThree with 2, 3, and 5. This should log 30:
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
-  } else if ( number <= 0) {
-    return false;
   }
+    return false;
 }
+
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
@@ -59,8 +57,6 @@ let lastItem = array[array.length -1 ];
 
 function getLast( array ) {
   return array[array.length -1];
-  //return array.pop() --> thought of doing this as well but wasn't
-  //sure because if I did array.pop(), wouldn't it remove the last item in the array?
 } // Ends function
 
 //console.log( 'Last item in array is', lastItem );
@@ -73,7 +69,7 @@ console.log( 'Last item in array is', getLast(array) );
 
 function find( value, array ) {
   for (let i=0; i < array.length; i++) {
-    if (array[i] === value) {
+    if (value === array[i]) {
       return true;
     }//End if statement
   } //End for loop
